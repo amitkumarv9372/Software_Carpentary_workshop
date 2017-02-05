@@ -1,0 +1,6 @@
+County	State	Population_Density	Poverty	Infant_Mortality	Suicide	Total_Births	Total_Deaths
+Hawaii	HI	42	13.1	6.5	13.5	6349	3764
+Honolulu	HI	1509	10.5	7.3	9.5	38506	18565
+Kalawao	HI	8			-1111.1	41	25
+Kauai	HI	101	10.5	4.5	11.2	3770	2218
+Maui	HI	121	10.2	6.4	10.9	5473	2523

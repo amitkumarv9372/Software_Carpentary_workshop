@@ -1,0 +1,2 @@
+County	State	Population_Density	Poverty	Infant_Mortality	Suicide	Total_Births	Total_Deaths
+Washington	DC	8966	17.5	10.9	6	22742	17375

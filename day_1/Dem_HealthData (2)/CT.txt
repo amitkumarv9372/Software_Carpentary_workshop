@@ -1,0 +1,9 @@
+County	State	Population_Density	Poverty	Infant_Mortality	Suicide	Total_Births	Total_Deaths
+Fairfield	CT	1443	7.3	5.3	6.3	36336	21011
+Hartford	CT	1193	9.2	6.3	7.6	31212	23682
+Litchfield	CT	207	5.5	4.3	10.1	5753	5035
+Middlesex	CT	442	5.1	4.6	7.4	5412	4058
+New Haven	CT	1398	9.4	6.8	7.6	30738	23078
+New London	CT	400	6.6	6.7	10.8	9768	6873
+Tolland	CT	360	5.3	4.8	6.5	4349	2682
+Windham	CT	226	8.1	5.3	10.4	3954	3157

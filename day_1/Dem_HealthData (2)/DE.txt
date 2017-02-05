@@ -1,0 +1,4 @@
+County	State	Population_Density	Poverty	Infant_Mortality	Suicide	Total_Births	Total_Deaths
+Kent	DE	244	10.6	11	11	5835	3342
+New Castle	DE	1227	8.2	9.4	11.1	21109	12346
+Sussex	DE	188	10	8.5	11.2	6224	5355

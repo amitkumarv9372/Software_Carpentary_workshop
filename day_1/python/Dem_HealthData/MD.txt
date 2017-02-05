@@ -1,0 +1,25 @@
+County	State	Population_Density	Poverty	Infant_Mortality	Suicide	Total_Births	Total_Deaths
+Allegany	MD	173	13.5	8	9.7	3752	4598
+Anne Arundel	MD	1228	6.2	6.7	9.2	19893	10819
+Baltimore	MD	1313	7.6	8.4	8.9	26388	23035
+Calvert	MD	409	5.3	5.3	8.5	5060	2540
+Caroline	MD	99	10.6	10.5	16.4	1996	1601
+Carroll	MD	375	5	4.9	10.7	6075	3751
+Cecil	MD	281	7.7	8	12.7	5895	3587
+Charles	MD	301	6.9	6.7	12	5229	2444
+Dorchester	MD	56	13.6	8.6	12.1	1628	2000
+Frederick	MD	333	5.6	4.7	11.8	8664	4139
+Garrett	MD	46	12.5	8.8	11.4	1595	1504
+Harford	MD	543	6.4	4.6	11.5	8568	4779
+Howard	MD	1069	4.7	5.8	6.9	10701	3650
+Kent	MD	71	10.8	11.1	13.3	2022	2319
+Montgomery	MD	1872	6.4	5.6	5.6	40256	15815
+Prince George's	MD	1743	9.4	11.9	7.6	37078	16258
+Queen Anne's	MD	123	6	5.5	10.6	2354	1735
+St. Mary's	MD	267	7.4	7.7	11.1	6642	2950
+Somerset	MD	79	19.2	11.3	8.3	2479	2708
+Talbot	MD	133	8.3	6.2	12.1	1763	2030
+Washington	MD	310	9.8	6.4	11.6	4990	3959
+Wicomico	MD	240	11.5	8.8	11.3	5800	4040
+Worcester	MD	103	9.8	6.5	11.2	2475	2746
+Baltimore City	MD	7869	19.6	11.1	8.2	28958	24321

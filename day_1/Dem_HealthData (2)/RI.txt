@@ -1,0 +1,6 @@
+County	State	Population_Density	Poverty	Infant_Mortality	Suicide	Total_Births	Total_Deaths
+Bristol	RI	2137	7	4.5	6.2	2470	2606
+Kent	RI	1008	6.7	5.2	9.2	5608	5241
+Newport	RI	805	8	5.1	6.9	4662	3759
+Providence	RI	1548	14.4	7.6	7.5	24958	18303
+Washington	RI	386	6.1	6.3	9.5	3980	2875

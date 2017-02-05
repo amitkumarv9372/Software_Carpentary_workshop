@@ -1,0 +1,15 @@
+County	State	Population_Density	Poverty	Infant_Mortality	Suicide	Total_Births	Total_Deaths
+Barnstable	MA	573	7.3	5.3	8.5	6050	8317
+Berkshire	MA	142	10.2	4.8	9.2	3737	4753
+Bristol	MA	983	10.4	5.5	6	19985	15686
+Dukes	MA	150	6.4	2.8	9.9	1564	1278
+Essex	MA	1475	9.7	4.9	6.4	28807	19822
+Franklin	MA	103	8.8	2	8.9	3471	3266
+Hampden	MA	746	14.4	5.8	7.9	17230	13905
+Hampshire	MA	290	9.3	4.1	5.3	3907	3579
+Middlesex	MA	1772	7.6	4.1	6.1	56097	34724
+Nantucket	MA	213	5.1	11.6	-1111.1	1210	681
+Norfolk	MA	1636	5.5	3.7	6	24882	17361
+Plymouth	MA	745	7.8	4.5	7.7	19161	12350
+Suffolk	MA	11183	15.9	6.1	5.7	28649	16317
+Worcester	MA	518	9.4	5.5	6.8	30438	20673

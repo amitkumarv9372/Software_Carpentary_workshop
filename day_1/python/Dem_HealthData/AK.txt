@@ -1,0 +1,28 @@
+County	State	Population_Density	Poverty	Infant_Mortality	Suicide	Total_Births	Total_Deaths
+Aleutians East	AK	0	11.7		-1111.1	222	73
+Aleutians West	AK	1	7.3		-1111.1	418	139
+Anchorage	AK	162	8.7	5.9	15.8	12633	3631
+Bethel	AK	0	20.9	12.9	34.3	4132	816
+Bristol Bay	AK	2	8.1		-1111.1	186	50
+Denali	AK	0	6.6		-1111.1	26	6
+Dillingham	AK	0	18.1	11.4	21.8	1003	251
+Fairbanks North Star	AK	12	7.8	6.9	14.7	7530	1667
+Haines	AK	1	11.4		-1111.1	198	143
+Juneau	AK	11	7.3	6.9	9.5	2029	678
+Kenai Peninsula	AK	3	9.9	6.6	25.2	3178	1423
+Ketchikan Gateway	AK	11	8.1	6.4	16.4	1960	900
+Kodiak Island	AK	2	8.7	6.9	10.1	2449	496
+Lake and Peninsula	AK	0	16.6		-1111.1	292	139
+Matanuska-Susitna	AK	3	10.5	5.4	19.4	4111	1492
+Nome	AK	0	17.4	11.2	63.8	2067	599
+North Slope	AK	0	11.6	9.5	35.7	1487	333
+Northwest Arctic	AK	0	17	11	67.4	1631	394
+Prince of Wales-Outer Ketchikan	AK	1	13.8	9.4	15.9	849	251
+Sitka	AK	3	7.7	6.6	16.7	1205	483
+Skagway-Hoonah-Angoon	AK	0	11.6		-1111.1	285	161
+Southeast Fairbanks	AK	0	15.7	5.8	33.1	980	322
+Valdez-Cordova	AK	0	9.1	5	13.1	1315	480
+Wade Hampton	AK	0	25.1	10.3	66.5	2158	358
+Wrangell-Petersburg	AK	1	8.9	4.1	18	826	451
+Yakutat	AK	0	10.8		-1111.1	87	44
+Yukon-Koyukuk	AK	0	17.5	6.5	91.3	1211	544

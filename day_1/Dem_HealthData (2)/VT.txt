@@ -1,0 +1,15 @@
+County	State	Population_Density	Poverty	Infant_Mortality	Suicide	Total_Births	Total_Deaths
+Addison	VT	48	8.7	4.9	8.9	1848	1323
+Bennington	VT	55	10	5.6	9	1784	1926
+Caledonia	VT	47	11.3	4.6	11.2	1510	1416
+Chittenden	VT	278	7.6	3.5	13.5	4915	2936
+Essex	VT	10	12.3		24.6	565	601
+Franklin	VT	75	9.5	8.5	10.3	2945	1860
+Grand Isle	VT	93	7.2	8.5	-1111.1	1947	472
+Lamoille	VT	53	8.8	5	10	2721	1676
+Orange	VT	43	9.2	3.9	13.9	1284	1155
+Orleans	VT	40	13.2	2.9	13.8	1393	1334
+Rutland	VT	68	10.3	6.4	14.4	3126	3066
+Washington	VT	86	8.4	5.2	13.3	3089	2469
+Windham	VT	56	9.7	3.2	13.2	2180	2067
+Windsor	VT	60	8.7	3.4	15.1	2385	2697

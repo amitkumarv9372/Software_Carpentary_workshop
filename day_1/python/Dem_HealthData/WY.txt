@@ -1,0 +1,24 @@
+County	State	Population_Density	Poverty	Infant_Mortality	Suicide	Total_Births	Total_Deaths
+Albany	WY	7	14.4	3.7	15.6	1881	925
+Big Horn	WY	4	13.2	6.2	21.9	1440	1304
+Campbell	WY	8	7.9	4.7	20	2548	841
+Carbon	WY	2	12.2	8.8	27.9	1775	1400
+Converse	WY	3	10.5	7.5	20.7	1486	894
+Crook	WY	2	8.5	0	20.8	634	481
+Fremont	WY	4	12.9	9.4	27.2	2440	1843
+Goshen	WY	6	14.6	7.7	15.2	1419	1276
+Hot Springs	WY	2	11.6		23.9	437	627
+Johnson	WY	2	9.6	0	14	674	739
+Laramie	WY	32	9.9	6.5	14.4	5807	3337
+Lincoln	WY	4	9.5	6.4	19.8	1907	983
+Natrona	WY	13	12.1	4.9	23.2	4508	2938
+Niobrara	WY	1	14.1		-1111.1	254	307
+Park	WY	4	11.7	3.9	17.4	1281	1173
+Platte	WY	4	11.5	5	22.2	901	983
+Sheridan	WY	11	11.5	4.8	20.5	1456	1455
+Sublette	WY	1	7.7	8.7	20.4	656	467
+Sweetwater	WY	4	8.6	10.2	27.9	2756	1264
+Teton	WY	5	5.6	3.5	13.1	1931	680
+Uinta	WY	10	10.6	7	18.4	3186	1060
+Washakie	WY	4	11.1	9.1	14.1	974	844
+Weston	WY	3	9.9	11.7	15.8	670	629

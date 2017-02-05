@@ -1,0 +1,54 @@
+County	State	Population_Density	Poverty	Infant_Mortality	Suicide	Total_Births	Total_Deaths
+Adams	ND	2	10		-1111.1	205	405
+Barnes	ND	7	10.3	12.1	18	1189	1514
+Benson	ND	5	22.5	6.1	29.3	1256	684
+Billings	ND	1	11		-1111.1	80	48
+Bottineau	ND	4	10.5	10.1	-1111.1	557	1001
+Bowman	ND	3	8.4		-1111.1	296	461
+Burke	ND	2	10.6		-1111.1	169	284
+Burleigh	ND	45	8.5	7.6	11.2	4331	2633
+Cass	ND	74	8.7	4.4	9.7	5283	2405
+Cavalier	ND	3	9.6		22	404	686
+Dickey	ND	5	12.5	3.5	-1111.1	635	807
+Divide	ND	2	10.1		-1111.1	139	450
+Dunn	ND	2	12.2		-1111.1	337	408
+Eddy	ND	4	9.5		-1111.1	260	462
+Emmons	ND	3	13.1		-1111.1	422	564
+Foster	ND	6	8.4		-1111.1	392	598
+Golden Valley	ND	2	12.4		-1111.1	188	182
+Grand Forks	ND	46	11	5	10.8	4232	2168
+Grant	ND	2	16.4		-1111.1	222	409
+Griggs	ND	4	9.8		-1111.1	223	467
+Hettinger	ND	2	11.3		-1111.1	218	408
+Kidder	ND	2	12.3		-1111.1	244	369
+LaMoure	ND	4	10.5		-1111.1	418	580
+Logan	ND	2	11.6		-1111.1	223	319
+McHenry	ND	3	13.3	7.9	15.4	560	708
+McIntosh	ND	3	13.2		-1111.1	289	689
+McKenzie	ND	2	13.7	23.7	25.6	662	602
+McLean	ND	4	11.6	5.5	12.4	811	1217
+Mercer	ND	8	7.4	5.6	13.1	809	769
+Morton	ND	13	9.5	8.5	10.1	3019	2217
+Mountrail	ND	4	13.6	15.7	14.6	922	929
+Nelson	ND	3	9.5		-1111.1	277	758
+Oliver	ND	3	8.9		-1111.1	156	120
+Pembina	ND	7	8.6	9.2	19.6	846	992
+Pierce	ND	4	11	11.6	-1111.1	476	700
+Ramsey	ND	10	12.7	9.6	16.8	1513	1600
+Ransom	ND	7	8.2	1.8	-1111.1	621	941
+Renville	ND	3	10		-1111.1	231	334
+Richland	ND	12	9.7	5.4	9.4	2074	1638
+Rolette	ND	15	23.9	13.2	19.1	2798	1166
+Sargent	ND	5	7.5		-1111.1	477	419
+Sheridan	ND	1	15.8		-1111.1	108	183
+Sioux	ND	4	25.7	14.2	46.7	918	298
+Slope	ND	1	11		-1111.1	82	35
+Stark	ND	16	11.3	8.4	13.4	2695	2008
+Steele	ND	3	7		-1111.1	197	239
+Stutsman	ND	9	10.6	5.6	15.4	2200	2333
+Towner	ND	2	9		-1111.1	244	428
+Traill	ND	10	8.8	15	-1111.1	895	1129
+Walsh	ND	9	10.6	4.7	10.1	1423	1695
+Ward	ND	28	10.1	7.8	11.3	4365	2469
+Wells	ND	4	11.2		-1111.1	408	844
+Williams	ND	9	11.2	5.8	12.6	2339	2099

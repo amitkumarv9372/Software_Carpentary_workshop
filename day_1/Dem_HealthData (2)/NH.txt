@@ -1,0 +1,11 @@
+County	State	Population_Density	Poverty	Infant_Mortality	Suicide	Total_Births	Total_Deaths
+Belknap	NH	153	7.3	6.7	11.8	2815	2809
+Carroll	NH	51	7.3	5.5	16.9	1993	2170
+Cheshire	NH	109	7.2	3.3	11.1	3691	3339
+Coos	NH	19	9.7	5.8	18.5	1545	2099
+Grafton	NH	49	7.2	5.5	11.3	4031	3358
+Hillsborough	NH	458	6.3	4.1	10.9	14975	8197
+Merrimack	NH	157	6.3	5.8	13	4642	3488
+Rockingham	NH	425	4.5	3.8	9.5	9909	5634
+Strafford	NH	323	8.5	4.3	12.5	4164	2529
+Sullivan	NH	80	7.6	9.7	15.7	2272	2029

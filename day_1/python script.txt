@@ -1,0 +1,1597 @@
+
+Logout 
+Untitled Last Checkpoint: a few seconds ago (autosaved) 
+ 
+
+Python 3  
+
+
+File
+Edit
+View
+Insert
+Cell
+Kernel
+Widgets
+Help
+
+
+
+
+
+
+
+
+
+
+
+
+CellToolbar
+
+In [1]:
+
+
+text= "Software carpentry"
+
+
+In [2]:
+
+
+print(text)
+Software Carpentry
+
+
+
+  File "<ipython-input-2-2f12fafe24d9>", line 2
+    Software Carpentry
+                     ^
+SyntaxError: invalid syntax
+
+
+In [3]:
+
+
+print(text)
+?
+
+
+
+Software carpentry
+In [4]:
+
+
+num=5
+print(num)
+
+
+
+5
+In [5]:
+
+
+pi=3.142
+print(pi)
+
+
+
+3.142
+In [6]:
+
+
+3+5
+
+
+Out[6]:
+8
+In [7]:
+
+
+2 ** 3
+
+
+Out[7]:
+8
+In [8]:
+
+
+13 % 5
+?
+
+
+Out[8]:
+3
+In [9]:
+
+
+3 > 4
+
+
+Out[9]:
+False
+In [10]:
+
+
+n = 4
+
+
+In [11]:
+
+
+n ** 3
+
+
+Out[11]:
+64
+In [12]:
+
+
+n % 3
+?
+
+
+Out[12]:
+1
+In [ ]:
+
+
+?
+
+
+In [ ]:
+
+
+numbers = [1,2,3,4,5]
+
+
+In [13]:
+
+
+print(numbers)
+
+
+
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-13-2c3b276b9c6d> in <module>()
+----> 1 print(numbers)
+
+NameError: name 'numbers' is not defined
+
+In [14]:
+
+
+numbers = [1,2,3,4,5]
+print(numbers)
+
+
+
+[1, 2, 3, 4, 5]
+In [15]:
+
+
+print(numbers[2])
+
+
+
+3
+In [16]:
+
+
+numbers.append(6)
+print(numbers)
+
+
+
+[1, 2, 3, 4, 5, 6]
+In [17]:
+
+
+dictionary = {'one':1,'two':2}
+print(dictionary)
+
+
+
+{'one': 1, 'two': 2}
+In [18]:
+
+
+print(dictionary['one'])
+
+
+
+1
+In [19]:
+
+
+dictionary = {'three': 3}
+print(dictionary)
+
+
+
+{'three': 3}
+In [20]:
+
+
+a_tuple=(1,2,3)
+print(a_tuple)
+
+
+
+(1, 2, 3)
+In [21]:
+
+
+import pandas
+
+
+In [22]:
+
+
+import pandas
+?
+
+
+In [23]:
+
+
+help pandas
+?
+
+
+
+  File "<ipython-input-23-8efcc25ac34b>", line 1
+    help pandas
+              ^
+SyntaxError: invalid syntax
+
+
+In [24]:
+
+
+help pandas
+
+
+
+  File "<ipython-input-24-8efcc25ac34b>", line 1
+    help pandas
+              ^
+SyntaxError: invalid syntax
+
+
+In [ ]:
+
+
+dem_data=pandas.read.csv("C:\Users\AMIT KUMAR\Desktop\Software_Carpentary_workshop\day_1\python\Dem_HealthData\TX.txt")
+
+
+In [25]:
+
+
+print(dem_data)
+
+
+
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-25-9b45d783b3f8> in <module>()
+----> 1 print(dem_data)
+
+NameError: name 'dem_data' is not defined
+
+In [49]:
+
+
+
+new_dem_data=pandas.read_csv("C:\Users\AMIT KUMAR\Desktop\Software_Carpentary_workshop\day_1\python\Dem_HealthData\TX.txt")
+
+
+
+  File "<ipython-input-49-14e0604ac180>", line 1
+    new_dem_data=pandas.read_csv("C:\Users\AMIT KUMAR\Desktop\Software_Carpentary_workshop\day_1\python\Dem_HealthData\TX.txt")
+                                ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+
+
+In [27]:
+
+
+dem_data=pandas.read.csv("C:\Users\AMIT KUMAR\Desktop\Software_Carpentary_workshop\day_1\python\Dem_HealthData\TX.txt")
+print(dem_data)
+?
+
+
+
+  File "<ipython-input-27-323bd7f47c66>", line 1
+    dem_data=pandas.read.csv("C:\Users\AMIT KUMAR\Desktop\Software_Carpentary_workshop\day_1\python\Dem_HealthData\TX.txt")
+                            ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+
+
+In [47]:
+
+
+
+new_dem_data=pandas.read_csv(r"C:\Users\AMIT KUMAR\Desktop\Software_Carpentary_workshop\day_1\python\Dem_HealthData\TX.txt", sep = "\t")
+
+
+
+In [48]:
+
+
+print(new_dem_data)
+
+
+
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-48-82aa4b8782e3> in <module>()
+----> 1 print(new_dem_data)
+
+NameError: name 'new_dem_data' is not defined
+
+In [35]:
+
+
+type(dem_data)
+
+
+Out[35]:
+pandas.core.frame.DataFrame
+In [36]:
+
+
+dem_data.dtypes
+
+
+Out[36]:
+County                 object
+State                  object
+Population_Density      int64
+Poverty               float64
+Infant_Mortality      float64
+Suicide               float64
+Total_Births            int64
+Total_Deaths            int64
+dtype: object
+In [37]:
+
+
+dem_data.columns.values
+
+
+Out[37]:
+array(['County', 'State', 'Population_Density', 'Poverty',
+       'Infant_Mortality', 'Suicide', 'Total_Births', 'Total_Deaths'], dtype=object)
+In [40]:
+
+
+dem_data.fillna(0)
+
+
+Out[40]:
+
+County
+State
+Population_Density
+Poverty
+Infant_Mortality
+Suicide
+Total_Births
+Total_Deaths
+0
+Anderson
+TX
+53
+20.1
+6.4
+17.4
+3298
+3018
+1
+Andrews
+TX
+8
+15.0
+10.7
+13.6
+2094
+1093
+2
+Angelina
+TX
+102
+17.3
+6.4
+13.0
+6401
+3955
+3
+Aransas
+TX
+98
+18.5
+7.0
+18.8
+2362
+2560
+4
+Archer
+TX
+10
+9.1
+8.9
+-1111.1
+1005
+677
+5
+Armstrong
+TX
+2
+9.7
+0.0
+-1111.1
+227
+266
+6
+Atascosa
+TX
+35
+19.0
+8.8
+17.1
+3164
+1571
+7
+Austin
+TX
+40
+11.3
+5.7
+11.3
+3236
+2522
+8
+Bailey
+TX
+8
+17.9
+7.3
+-1111.1
+1207
+615
+9
+Bandera
+TX
+25
+12.4
+7.6
+22.2
+1726
+1407
+10
+Bastrop
+TX
+79
+12.6
+5.6
+16.4
+4464
+2265
+11
+Baylor
+TX
+4
+16.7
+0.0
+-1111.1
+409
+700
+12
+Bee
+TX
+37
+24.6
+6.7
+14.1
+1938
+1123
+13
+Bell
+TX
+242
+14.8
+7.5
+11.5
+16694
+4819
+14
+Bexar
+TX
+1218
+17.6
+7.0
+10.3
+73703
+30791
+15
+Blanco
+TX
+13
+10.5
+5.7
+23.1
+949
+917
+16
+Borden
+TX
+1
+6.9
+0.0
+-1111.1
+37
+40
+17
+Bosque
+TX
+18
+14.3
+8.2
+14.8
+2013
+2641
+18
+Bowie
+TX
+102
+17.5
+8.2
+12.4
+5751
+4922
+19
+Brazoria
+TX
+201
+11.5
+5.0
+13.4
+12713
+5183
+20
+Brazos
+TX
+267
+18.9
+4.4
+8.8
+6781
+2343
+21
+Brewster
+TX
+1
+17.5
+11.4
+24.9
+1156
+779
+22
+Briscoe
+TX
+2
+15.7
+0.0
+-1111.1
+242
+225
+23
+Brooks
+TX
+8
+29.5
+3.1
+15.0
+1417
+773
+24
+Brown
+TX
+41
+18.1
+11.2
+8.3
+2502
+2386
+25
+Burleson
+TX
+26
+15.5
+6.5
+13.5
+2185
+1613
+26
+Burnet
+TX
+42
+11.9
+6.8
+13.2
+2364
+1920
+27
+Caldwell
+TX
+67
+14.7
+7.4
+14.0
+2580
+1405
+28
+Calhoun
+TX
+40
+16.3
+3.6
+9.9
+3372
+1671
+29
+Callahan
+TX
+15
+14.3
+6.6
+18.2
+1347
+1409
+...
+...
+...
+...
+...
+...
+...
+...
+...
+224
+Titus
+TX
+72
+16.4
+5.5
+15.1
+2546
+1338
+225
+Tom Green
+TX
+68
+16.7
+8.0
+15.9
+4738
+3035
+226
+Travis
+TX
+898
+13.9
+5.8
+12.9
+43572
+12200
+227
+Trinity
+TX
+21
+17.8
+12.6
+19.0
+1544
+1892
+228
+Tyler
+TX
+22
+17.5
+13.1
+12.1
+2219
+2448
+229
+Upshur
+TX
+64
+15.9
+7.3
+15.4
+2332
+2101
+230
+Upton
+TX
+2
+16.3
+0.0
+-1111.1
+487
+349
+231
+Uvalde
+TX
+17
+23.4
+4.7
+7.7
+2350
+1174
+232
+Val Verde
+TX
+15
+22.4
+5.7
+8.8
+4568
+1561
+233
+Van Zandt
+TX
+62
+14.0
+4.3
+20.2
+3053
+2930
+234
+Victoria
+TX
+97
+15.5
+6.1
+11.2
+6733
+3466
+235
+Walker
+TX
+80
+19.4
+6.2
+13.8
+3069
+2139
+236
+Waller
+TX
+68
+17.5
+3.2
+12.1
+2466
+1189
+237
+Ward
+TX
+12
+17.1
+7.1
+10.4
+1573
+1073
+238
+Washington
+TX
+52
+13.6
+4.6
+5.8
+1956
+1729
+239
+Webb
+TX
+67
+27.1
+5.3
+6.0
+17803
+3046
+240
+Wharton
+TX
+38
+15.6
+5.3
+10.3
+3185
+2056
+241
+Wheeler
+TX
+5
+13.8
+7.6
+23.7
+574
+883
+242
+Wichita
+TX
+201
+15.6
+8.9
+13.2
+5643
+3875
+243
+Wilbarger
+TX
+14
+15.9
+6.7
+9.6
+1995
+1844
+244
+Willacy
+TX
+34
+30.2
+4.0
+5.8
+3972
+1186
+245
+Williamson
+TX
+297
+6.9
+4.9
+7.9
+14947
+3857
+246
+Wilson
+TX
+47
+12.0
+6.9
+9.0
+2171
+1313
+247
+Winkler
+TX
+8
+16.4
+5.0
+21.9
+1120
+762
+248
+Wise
+TX
+63
+10.8
+6.2
+13.3
+3392
+2131
+249
+Wood
+TX
+63
+15.2
+8.4
+14.8
+2135
+2603
+250
+Yoakum
+TX
+9
+15.5
+3.6
+17.8
+1256
+566
+251
+Young
+TX
+20
+16.4
+6.4
+17.2
+2222
+2563
+252
+Zapata
+TX
+13
+27.0
+5.0
+10.5
+2409
+851
+253
+Zavala
+TX
+9
+32.7
+4.8
+12.1
+2125
+922
+254 rows × 8 columns
+In [54]:
+
+
+c_dem_data = dem_data.fillna(0)
+?
+
+
+In [42]:
+
+
+print(clean_dem_data)
+
+
+
+         County State  Population_Density  Poverty  Infant_Mortality  Suicide  \
+0      Anderson    TX                  53     20.1               6.4     17.4   
+1       Andrews    TX                   8     15.0              10.7     13.6   
+2      Angelina    TX                 102     17.3               6.4     13.0   
+3       Aransas    TX                  98     18.5               7.0     18.8   
+4        Archer    TX                  10      9.1               8.9  -1111.1   
+5     Armstrong    TX                   2      9.7               0.0  -1111.1   
+6      Atascosa    TX                  35     19.0               8.8     17.1   
+7        Austin    TX                  40     11.3               5.7     11.3   
+8        Bailey    TX                   8     17.9               7.3  -1111.1   
+9       Bandera    TX                  25     12.4               7.6     22.2   
+10      Bastrop    TX                  79     12.6               5.6     16.4   
+11       Baylor    TX                   4     16.7               0.0  -1111.1   
+12          Bee    TX                  37     24.6               6.7     14.1   
+13         Bell    TX                 242     14.8               7.5     11.5   
+14        Bexar    TX                1218     17.6               7.0     10.3   
+15       Blanco    TX                  13     10.5               5.7     23.1   
+16       Borden    TX                   1      6.9               0.0  -1111.1   
+17       Bosque    TX                  18     14.3               8.2     14.8   
+18        Bowie    TX                 102     17.5               8.2     12.4   
+19     Brazoria    TX                 201     11.5               5.0     13.4   
+20       Brazos    TX                 267     18.9               4.4      8.8   
+21     Brewster    TX                   1     17.5              11.4     24.9   
+22      Briscoe    TX                   2     15.7               0.0  -1111.1   
+23       Brooks    TX                   8     29.5               3.1     15.0   
+24        Brown    TX                  41     18.1              11.2      8.3   
+25     Burleson    TX                  26     15.5               6.5     13.5   
+26       Burnet    TX                  42     11.9               6.8     13.2   
+27     Caldwell    TX                  67     14.7               7.4     14.0   
+28      Calhoun    TX                  40     16.3               3.6      9.9   
+29     Callahan    TX                  15     14.3               6.6     18.2   
+..          ...   ...                 ...      ...               ...      ...   
+224       Titus    TX                  72     16.4               5.5     15.1   
+225   Tom Green    TX                  68     16.7               8.0     15.9   
+226      Travis    TX                 898     13.9               5.8     12.9   
+227     Trinity    TX                  21     17.8              12.6     19.0   
+228       Tyler    TX                  22     17.5              13.1     12.1   
+229      Upshur    TX                  64     15.9               7.3     15.4   
+230       Upton    TX                   2     16.3               0.0  -1111.1   
+231      Uvalde    TX                  17     23.4               4.7      7.7   
+232   Val Verde    TX                  15     22.4               5.7      8.8   
+233   Van Zandt    TX                  62     14.0               4.3     20.2   
+234    Victoria    TX                  97     15.5               6.1     11.2   
+235      Walker    TX                  80     19.4               6.2     13.8   
+236      Waller    TX                  68     17.5               3.2     12.1   
+237        Ward    TX                  12     17.1               7.1     10.4   
+238  Washington    TX                  52     13.6               4.6      5.8   
+239        Webb    TX                  67     27.1               5.3      6.0   
+240     Wharton    TX                  38     15.6               5.3     10.3   
+241     Wheeler    TX                   5     13.8               7.6     23.7   
+242     Wichita    TX                 201     15.6               8.9     13.2   
+243   Wilbarger    TX                  14     15.9               6.7      9.6   
+244     Willacy    TX                  34     30.2               4.0      5.8   
+245  Williamson    TX                 297      6.9               4.9      7.9   
+246      Wilson    TX                  47     12.0               6.9      9.0   
+247     Winkler    TX                   8     16.4               5.0     21.9   
+248        Wise    TX                  63     10.8               6.2     13.3   
+249        Wood    TX                  63     15.2               8.4     14.8   
+250      Yoakum    TX                   9     15.5               3.6     17.8   
+251       Young    TX                  20     16.4               6.4     17.2   
+252      Zapata    TX                  13     27.0               5.0     10.5   
+253      Zavala    TX                   9     32.7               4.8     12.1   
+
+     Total_Births  Total_Deaths  
+0            3298          3018  
+1            2094          1093  
+2            6401          3955  
+3            2362          2560  
+4            1005           677  
+5             227           266  
+6            3164          1571  
+7            3236          2522  
+8            1207           615  
+9            1726          1407  
+10           4464          2265  
+11            409           700  
+12           1938          1123  
+13          16694          4819  
+14          73703         30791  
+15            949           917  
+16             37            40  
+17           2013          2641  
+18           5751          4922  
+19          12713          5183  
+20           6781          2343  
+21           1156           779  
+22            242           225  
+23           1417           773  
+24           2502          2386  
+25           2185          1613  
+26           2364          1920  
+27           2580          1405  
+28           3372          1671  
+29           1347          1409  
+..            ...           ...  
+224          2546          1338  
+225          4738          3035  
+226         43572         12200  
+227          1544          1892  
+228          2219          2448  
+229          2332          2101  
+230           487           349  
+231          2350          1174  
+232          4568          1561  
+233          3053          2930  
+234          6733          3466  
+235          3069          2139  
+236          2466          1189  
+237          1573          1073  
+238          1956          1729  
+239         17803          3046  
+240          3185          2056  
+241           574           883  
+242          5643          3875  
+243          1995          1844  
+244          3972          1186  
+245         14947          3857  
+246          2171          1313  
+247          1120           762  
+248          3392          2131  
+249          2135          2603  
+250          1256           566  
+251          2222          2563  
+252          2409           851  
+253          2125           922  
+
+[254 rows x 8 columns]
+In [45]:
+
+
+clean_dem_data.loc[(dem_data['Suicide'] < 0),'Suicide'] = 0
+
+
+In [46]:
+
+
+print(clean_dem_data)
+
+
+
+         County State  Population_Density  Poverty  Infant_Mortality  Suicide  \
+0      Anderson    TX                  53     20.1               6.4     17.4   
+1       Andrews    TX                   8     15.0              10.7     13.6   
+2      Angelina    TX                 102     17.3               6.4     13.0   
+3       Aransas    TX                  98     18.5               7.0     18.8   
+4             0     0                   0      0.0               0.0      0.0   
+5             0     0                   0      0.0               0.0      0.0   
+6      Atascosa    TX                  35     19.0               8.8     17.1   
+7        Austin    TX                  40     11.3               5.7     11.3   
+8             0     0                   0      0.0               0.0      0.0   
+9       Bandera    TX                  25     12.4               7.6     22.2   
+10      Bastrop    TX                  79     12.6               5.6     16.4   
+11            0     0                   0      0.0               0.0      0.0   
+12          Bee    TX                  37     24.6               6.7     14.1   
+13         Bell    TX                 242     14.8               7.5     11.5   
+14        Bexar    TX                1218     17.6               7.0     10.3   
+15       Blanco    TX                  13     10.5               5.7     23.1   
+16            0     0                   0      0.0               0.0      0.0   
+17       Bosque    TX                  18     14.3               8.2     14.8   
+18        Bowie    TX                 102     17.5               8.2     12.4   
+19     Brazoria    TX                 201     11.5               5.0     13.4   
+20       Brazos    TX                 267     18.9               4.4      8.8   
+21     Brewster    TX                   1     17.5              11.4     24.9   
+22            0     0                   0      0.0               0.0      0.0   
+23       Brooks    TX                   8     29.5               3.1     15.0   
+24        Brown    TX                  41     18.1              11.2      8.3   
+25     Burleson    TX                  26     15.5               6.5     13.5   
+26       Burnet    TX                  42     11.9               6.8     13.2   
+27     Caldwell    TX                  67     14.7               7.4     14.0   
+28      Calhoun    TX                  40     16.3               3.6      9.9   
+29     Callahan    TX                  15     14.3               6.6     18.2   
+..          ...   ...                 ...      ...               ...      ...   
+224       Titus    TX                  72     16.4               5.5     15.1   
+225   Tom Green    TX                  68     16.7               8.0     15.9   
+226      Travis    TX                 898     13.9               5.8     12.9   
+227     Trinity    TX                  21     17.8              12.6     19.0   
+228       Tyler    TX                  22     17.5              13.1     12.1   
+229      Upshur    TX                  64     15.9               7.3     15.4   
+230           0     0                   0      0.0               0.0      0.0   
+231      Uvalde    TX                  17     23.4               4.7      7.7   
+232   Val Verde    TX                  15     22.4               5.7      8.8   
+233   Van Zandt    TX                  62     14.0               4.3     20.2   
+234    Victoria    TX                  97     15.5               6.1     11.2   
+235      Walker    TX                  80     19.4               6.2     13.8   
+236      Waller    TX                  68     17.5               3.2     12.1   
+237        Ward    TX                  12     17.1               7.1     10.4   
+238  Washington    TX                  52     13.6               4.6      5.8   
+239        Webb    TX                  67     27.1               5.3      6.0   
+240     Wharton    TX                  38     15.6               5.3     10.3   
+241     Wheeler    TX                   5     13.8               7.6     23.7   
+242     Wichita    TX                 201     15.6               8.9     13.2   
+243   Wilbarger    TX                  14     15.9               6.7      9.6   
+244     Willacy    TX                  34     30.2               4.0      5.8   
+245  Williamson    TX                 297      6.9               4.9      7.9   
+246      Wilson    TX                  47     12.0               6.9      9.0   
+247     Winkler    TX                   8     16.4               5.0     21.9   
+248        Wise    TX                  63     10.8               6.2     13.3   
+249        Wood    TX                  63     15.2               8.4     14.8   
+250      Yoakum    TX                   9     15.5               3.6     17.8   
+251       Young    TX                  20     16.4               6.4     17.2   
+252      Zapata    TX                  13     27.0               5.0     10.5   
+253      Zavala    TX                   9     32.7               4.8     12.1   
+
+     Total_Births  Total_Deaths  
+0            3298          3018  
+1            2094          1093  
+2            6401          3955  
+3            2362          2560  
+4               0             0  
+5               0             0  
+6            3164          1571  
+7            3236          2522  
+8               0             0  
+9            1726          1407  
+10           4464          2265  
+11              0             0  
+12           1938          1123  
+13          16694          4819  
+14          73703         30791  
+15            949           917  
+16              0             0  
+17           2013          2641  
+18           5751          4922  
+19          12713          5183  
+20           6781          2343  
+21           1156           779  
+22              0             0  
+23           1417           773  
+24           2502          2386  
+25           2185          1613  
+26           2364          1920  
+27           2580          1405  
+28           3372          1671  
+29           1347          1409  
+..            ...           ...  
+224          2546          1338  
+225          4738          3035  
+226         43572         12200  
+227          1544          1892  
+228          2219          2448  
+229          2332          2101  
+230             0             0  
+231          2350          1174  
+232          4568          1561  
+233          3053          2930  
+234          6733          3466  
+235          3069          2139  
+236          2466          1189  
+237          1573          1073  
+238          1956          1729  
+239         17803          3046  
+240          3185          2056  
+241           574           883  
+242          5643          3875  
+243          1995          1844  
+244          3972          1186  
+245         14947          3857  
+246          2171          1313  
+247          1120           762  
+248          3392          2131  
+249          2135          2603  
+250          1256           566  
+251          2222          2563  
+252          2409           851  
+253          2125           922  
+
+[254 rows x 8 columns]
+In [50]:
+
+
+
+new_dem_data=pandas.read_csv(r"C:\Users\AMIT KUMAR\Desktop\Software_Carpentary_workshop\day_1\python\Dem_HealthData\TX.txt", sep = "\t")
+
+
+In [51]:
+
+
+print(new_dem_data)
+
+
+
+         County State  Population_Density  Poverty  Infant_Mortality  Suicide  \
+0      Anderson    TX                  53     20.1               6.4     17.4   
+1       Andrews    TX                   8     15.0              10.7     13.6   
+2      Angelina    TX                 102     17.3               6.4     13.0   
+3       Aransas    TX                  98     18.5               7.0     18.8   
+4        Archer    TX                  10      9.1               8.9  -1111.1   
+5     Armstrong    TX                   2      9.7               NaN  -1111.1   
+6      Atascosa    TX                  35     19.0               8.8     17.1   
+7        Austin    TX                  40     11.3               5.7     11.3   
+8        Bailey    TX                   8     17.9               7.3  -1111.1   
+9       Bandera    TX                  25     12.4               7.6     22.2   
+10      Bastrop    TX                  79     12.6               5.6     16.4   
+11       Baylor    TX                   4     16.7               NaN  -1111.1   
+12          Bee    TX                  37     24.6               6.7     14.1   
+13         Bell    TX                 242     14.8               7.5     11.5   
+14        Bexar    TX                1218     17.6               7.0     10.3   
+15       Blanco    TX                  13     10.5               5.7     23.1   
+16       Borden    TX                   1      6.9               NaN  -1111.1   
+17       Bosque    TX                  18     14.3               8.2     14.8   
+18        Bowie    TX                 102     17.5               8.2     12.4   
+19     Brazoria    TX                 201     11.5               5.0     13.4   
+20       Brazos    TX                 267     18.9               4.4      8.8   
+21     Brewster    TX                   1     17.5              11.4     24.9   
+22      Briscoe    TX                   2     15.7               NaN  -1111.1   
+23       Brooks    TX                   8     29.5               3.1     15.0   
+24        Brown    TX                  41     18.1              11.2      8.3   
+25     Burleson    TX                  26     15.5               6.5     13.5   
+26       Burnet    TX                  42     11.9               6.8     13.2   
+27     Caldwell    TX                  67     14.7               7.4     14.0   
+28      Calhoun    TX                  40     16.3               3.6      9.9   
+29     Callahan    TX                  15     14.3               6.6     18.2   
+..          ...   ...                 ...      ...               ...      ...   
+224       Titus    TX                  72     16.4               5.5     15.1   
+225   Tom Green    TX                  68     16.7               8.0     15.9   
+226      Travis    TX                 898     13.9               5.8     12.9   
+227     Trinity    TX                  21     17.8              12.6     19.0   
+228       Tyler    TX                  22     17.5              13.1     12.1   
+229      Upshur    TX                  64     15.9               7.3     15.4   
+230       Upton    TX                   2     16.3               NaN  -1111.1   
+231      Uvalde    TX                  17     23.4               4.7      7.7   
+232   Val Verde    TX                  15     22.4               5.7      8.8   
+233   Van Zandt    TX                  62     14.0               4.3     20.2   
+234    Victoria    TX                  97     15.5               6.1     11.2   
+235      Walker    TX                  80     19.4               6.2     13.8   
+236      Waller    TX                  68     17.5               3.2     12.1   
+237        Ward    TX                  12     17.1               7.1     10.4   
+238  Washington    TX                  52     13.6               4.6      5.8   
+239        Webb    TX                  67     27.1               5.3      6.0   
+240     Wharton    TX                  38     15.6               5.3     10.3   
+241     Wheeler    TX                   5     13.8               7.6     23.7   
+242     Wichita    TX                 201     15.6               8.9     13.2   
+243   Wilbarger    TX                  14     15.9               6.7      9.6   
+244     Willacy    TX                  34     30.2               4.0      5.8   
+245  Williamson    TX                 297      6.9               4.9      7.9   
+246      Wilson    TX                  47     12.0               6.9      9.0   
+247     Winkler    TX                   8     16.4               5.0     21.9   
+248        Wise    TX                  63     10.8               6.2     13.3   
+249        Wood    TX                  63     15.2               8.4     14.8   
+250      Yoakum    TX                   9     15.5               3.6     17.8   
+251       Young    TX                  20     16.4               6.4     17.2   
+252      Zapata    TX                  13     27.0               5.0     10.5   
+253      Zavala    TX                   9     32.7               4.8     12.1   
+
+     Total_Births  Total_Deaths  
+0            3298          3018  
+1            2094          1093  
+2            6401          3955  
+3            2362          2560  
+4            1005           677  
+5             227           266  
+6            3164          1571  
+7            3236          2522  
+8            1207           615  
+9            1726          1407  
+10           4464          2265  
+11            409           700  
+12           1938          1123  
+13          16694          4819  
+14          73703         30791  
+15            949           917  
+16             37            40  
+17           2013          2641  
+18           5751          4922  
+19          12713          5183  
+20           6781          2343  
+21           1156           779  
+22            242           225  
+23           1417           773  
+24           2502          2386  
+25           2185          1613  
+26           2364          1920  
+27           2580          1405  
+28           3372          1671  
+29           1347          1409  
+..            ...           ...  
+224          2546          1338  
+225          4738          3035  
+226         43572         12200  
+227          1544          1892  
+228          2219          2448  
+229          2332          2101  
+230           487           349  
+231          2350          1174  
+232          4568          1561  
+233          3053          2930  
+234          6733          3466  
+235          3069          2139  
+236          2466          1189  
+237          1573          1073  
+238          1956          1729  
+239         17803          3046  
+240          3185          2056  
+241           574           883  
+242          5643          3875  
+243          1995          1844  
+244          3972          1186  
+245         14947          3857  
+246          2171          1313  
+247          1120           762  
+248          3392          2131  
+249          2135          2603  
+250          1256           566  
+251          2222          2563  
+252          2409           851  
+253          2125           922  
+
+[254 rows x 8 columns]
+In [55]:
+
+
+c_dem_data.loc[(new_dem_data['Suicide']<0,'Suicide')] = 0
+
+
+
+In [56]:
+
+
+print(c_dem_data)
+
+
+
+         County State  Population_Density  Poverty  Infant_Mortality  Suicide  \
+0      Anderson    TX                  53     20.1               6.4     17.4   
+1       Andrews    TX                   8     15.0              10.7     13.6   
+2      Angelina    TX                 102     17.3               6.4     13.0   
+3       Aransas    TX                  98     18.5               7.0     18.8   
+4        Archer    TX                  10      9.1               8.9      0.0   
+5     Armstrong    TX                   2      9.7               0.0      0.0   
+6      Atascosa    TX                  35     19.0               8.8     17.1   
+7        Austin    TX                  40     11.3               5.7     11.3   
+8        Bailey    TX                   8     17.9               7.3      0.0   
+9       Bandera    TX                  25     12.4               7.6     22.2   
+10      Bastrop    TX                  79     12.6               5.6     16.4   
+11       Baylor    TX                   4     16.7               0.0      0.0   
+12          Bee    TX                  37     24.6               6.7     14.1   
+13         Bell    TX                 242     14.8               7.5     11.5   
+14        Bexar    TX                1218     17.6               7.0     10.3   
+15       Blanco    TX                  13     10.5               5.7     23.1   
+16       Borden    TX                   1      6.9               0.0      0.0   
+17       Bosque    TX                  18     14.3               8.2     14.8   
+18        Bowie    TX                 102     17.5               8.2     12.4   
+19     Brazoria    TX                 201     11.5               5.0     13.4   
+20       Brazos    TX                 267     18.9               4.4      8.8   
+21     Brewster    TX                   1     17.5              11.4     24.9   
+22      Briscoe    TX                   2     15.7               0.0      0.0   
+23       Brooks    TX                   8     29.5               3.1     15.0   
+24        Brown    TX                  41     18.1              11.2      8.3   
+25     Burleson    TX                  26     15.5               6.5     13.5   
+26       Burnet    TX                  42     11.9               6.8     13.2   
+27     Caldwell    TX                  67     14.7               7.4     14.0   
+28      Calhoun    TX                  40     16.3               3.6      9.9   
+29     Callahan    TX                  15     14.3               6.6     18.2   
+..          ...   ...                 ...      ...               ...      ...   
+224       Titus    TX                  72     16.4               5.5     15.1   
+225   Tom Green    TX                  68     16.7               8.0     15.9   
+226      Travis    TX                 898     13.9               5.8     12.9   
+227     Trinity    TX                  21     17.8              12.6     19.0   
+228       Tyler    TX                  22     17.5              13.1     12.1   
+229      Upshur    TX                  64     15.9               7.3     15.4   
+230       Upton    TX                   2     16.3               0.0      0.0   
+231      Uvalde    TX                  17     23.4               4.7      7.7   
+232   Val Verde    TX                  15     22.4               5.7      8.8   
+233   Van Zandt    TX                  62     14.0               4.3     20.2   
+234    Victoria    TX                  97     15.5               6.1     11.2   
+235      Walker    TX                  80     19.4               6.2     13.8   
+236      Waller    TX                  68     17.5               3.2     12.1   
+237        Ward    TX                  12     17.1               7.1     10.4   
+238  Washington    TX                  52     13.6               4.6      5.8   
+239        Webb    TX                  67     27.1               5.3      6.0   
+240     Wharton    TX                  38     15.6               5.3     10.3   
+241     Wheeler    TX                   5     13.8               7.6     23.7   
+242     Wichita    TX                 201     15.6               8.9     13.2   
+243   Wilbarger    TX                  14     15.9               6.7      9.6   
+244     Willacy    TX                  34     30.2               4.0      5.8   
+245  Williamson    TX                 297      6.9               4.9      7.9   
+246      Wilson    TX                  47     12.0               6.9      9.0   
+247     Winkler    TX                   8     16.4               5.0     21.9   
+248        Wise    TX                  63     10.8               6.2     13.3   
+249        Wood    TX                  63     15.2               8.4     14.8   
+250      Yoakum    TX                   9     15.5               3.6     17.8   
+251       Young    TX                  20     16.4               6.4     17.2   
+252      Zapata    TX                  13     27.0               5.0     10.5   
+253      Zavala    TX                   9     32.7               4.8     12.1   
+
+     Total_Births  Total_Deaths  
+0            3298          3018  
+1            2094          1093  
+2            6401          3955  
+3            2362          2560  
+4            1005           677  
+5             227           266  
+6            3164          1571  
+7            3236          2522  
+8            1207           615  
+9            1726          1407  
+10           4464          2265  
+11            409           700  
+12           1938          1123  
+13          16694          4819  
+14          73703         30791  
+15            949           917  
+16             37            40  
+17           2013          2641  
+18           5751          4922  
+19          12713          5183  
+20           6781          2343  
+21           1156           779  
+22            242           225  
+23           1417           773  
+24           2502          2386  
+25           2185          1613  
+26           2364          1920  
+27           2580          1405  
+28           3372          1671  
+29           1347          1409  
+..            ...           ...  
+224          2546          1338  
+225          4738          3035  
+226         43572         12200  
+227          1544          1892  
+228          2219          2448  
+229          2332          2101  
+230           487           349  
+231          2350          1174  
+232          4568          1561  
+233          3053          2930  
+234          6733          3466  
+235          3069          2139  
+236          2466          1189  
+237          1573          1073  
+238          1956          1729  
+239         17803          3046  
+240          3185          2056  
+241           574           883  
+242          5643          3875  
+243          1995          1844  
+244          3972          1186  
+245         14947          3857  
+246          2171          1313  
+247          1120           762  
+248          3392          2131  
+249          2135          2603  
+250          1256           566  
+251          2222          2563  
+252          2409           851  
+253          2125           922  
+
+[254 rows x 8 columns]
+In [57]:
+
+
+c_dem_data['Poverty'].describe()
+
+
+Out[57]:
+count    254.000000
+mean      16.793307
+std        4.891179
+min        5.400000
+25%       13.700000
+50%       16.350000
+75%       19.100000
+max       36.200000
+Name: Poverty, dtype: float64
+In [58]:
+
+
+c_dem_data['Poverty'].mean()
+
+
+Out[58]:
+16.793307086614174
+In [59]:
+
+
+c_dem_data['Poverty'].min()
+
+
+Out[59]:
+5.4000000000000004
+In [60]:
+
+
+c_dem_data['Poverty'].max()
+
+
+Out[60]:
+36.200000000000003
+In [62]:
+
+
+import matplotlib.pyplot as plt
+
+
+In [63]:
+
+
+plt.hist(c_dem_data['Poverty'])
+plt.show()
+
+
+
+
+In [68]:
+
+
+plt.hist(c_dem_data['Population_Density'])
+plt.savefig("histogram2.png")
+plt.show()
+
+
+
+
+In [66]:
+
+
+plt.savefig("histogram.png") 
+
+
+
+In [69]:
+
+
+import sys
+
+
+In [70]:
+
+
+sys.argv[1]
+
+
+Out[70]:
+'-f'
+In [ ]:
+
+
+sys.argv[1]
+
+
+In [ ]:
+
+
+import sys,pandas
+input_file=sys.argv[1]
+col = sys.argv[2]
+df=pandas.read_csv(input_file,sep='\t')
+import matplotlib.pyplot as plt
+plt.hist(df[col])
+plt.show()
+
+
